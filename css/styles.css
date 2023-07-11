@@ -229,6 +229,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .page-title {
@@ -267,4 +268,18 @@ body {
   position: absolute;
   top: 7px;
   left: 8px;
+}
+
+/* -----------------------------table----------------------------- */
+table {
+  width: 100%;
+}
+
+thead {
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  color: #b5b7c0;
+  letter-spacing: -0.14px;
 }
