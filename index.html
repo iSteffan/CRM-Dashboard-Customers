@@ -40,7 +40,7 @@
                 type="button"
                 class="navigation-list__btn navigation-list__btn--flex-correction"
               >
-                <svg width="24" height="24" class="sidebar__title-icon">
+                <svg width="24" height="24" class="navigation-list__icon">
                   <use href="./images/symbol-defs.svg#key-square"></use>
                 </svg>
                 Dashboard
@@ -60,14 +60,22 @@
               </button>
             </li>
             <li class="navigation-list__item">
-              <button type="button" class="navigation-list__btn">
+              <button type="button" class="navigation-list__btn navigation-list__btn--active">
                 <div class="navigation-list__btn-container">
-                  <svg width="24" height="24" class="navigation-list__icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    class="navigation-list__icon navigation-list__icon--active"
+                  >
                     <use href="./images/symbol-defs.svg#user-square"></use>
                   </svg>
                   Customers
                 </div>
-                <svg width="16" height="16" class="navigation-list__icon-chevron">
+                <svg
+                  width="16"
+                  height="16"
+                  class="navigation-list__icon-chevron navigation-list__icon-chevron--active"
+                >
                   <use href="./images/symbol-defs.svg#chevron-right"></use>
                 </svg>
               </button>
@@ -112,6 +120,13 @@
               </button>
             </li>
           </ul>
+          <div class="user">
+            <img src="./images/user.png" alt="user avatar" class="user__avatar" />
+            <div class="user__wrapper">
+              <p class="user__name">Evano</p>
+              <p class="user__position">Project Manager</p>
+            </div>
+          </div>
         </aside>
       </div>
     </main>

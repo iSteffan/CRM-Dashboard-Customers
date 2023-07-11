@@ -28,28 +28,6 @@ img {
   height: auto;
 }
 
-/* ------------------------------------------------Fonts------------------------------------------------ */
-/* @font-face {
-  font-family: 'Inter';
-  src: url(../fonts/Inter-Regular.ttf) format('truetype');
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url(../fonts/Inter-Medium.ttf) format('truetype');
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url(../fonts/Inter-Bold.ttf) format('truetype');
-  font-style: normal;
-  font-weight: 700;
-} */
-
 /* ------------------------------------------------General------------------------------------------------ */
 body {
   font-family: 'Poppins', sans-serif;
@@ -120,6 +98,7 @@ body {
   letter-spacing: -0.1px;
 }
 
+/* -----------------------------navigation-list----------------------------- */
 .navigation-list {
   display: flex;
   flex-direction: column;
@@ -142,7 +121,18 @@ body {
   line-height: normal;
   letter-spacing: -0.14px;
   border: 0;
+  border-radius: 8px;
   background-color: inherit;
+
+  transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+
+.navigation-list__btn--active {
+  color: #fff;
+  background: #5932ea;
+
+  fill: #fff;
+  stroke: #fff;
 }
 
 .navigation-list__btn--flex-correction {
@@ -154,4 +144,64 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+
+.navigation-list__icon {
+  fill: #9197b3;
+  stroke: #9197b3;
+
+  transition: fill 250ms ease-out, stroke 250ms ease-out;
+}
+
+.navigation-list__icon--active {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.navigation-list__icon-chevron {
+  stroke: #9197b3;
+
+  transition: stroke 250ms ease-out;
+}
+
+.navigation-list__icon-chevron--active {
+  stroke: #fff;
+}
+
+.navigation-list__btn:hover {
+  color: #fff;
+  background: #5932ea;
+}
+
+.navigation-list__btn:hover .navigation-list__icon,
+.navigation-list__btn:hover .navigation-list__icon-chevron {
+  fill: #fff;
+  stroke: #fff;
+}
+
+/* -----------------------------user----------------------------- */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 586px;
+}
+
+.user__avatar {
+  width: 42px;
+  height: auto;
+}
+
+.user__name {
+  color: #000;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+
+.user__position {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
 }
